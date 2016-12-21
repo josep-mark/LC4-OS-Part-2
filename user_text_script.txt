@@ -1,0 +1,10 @@
+clear
+reset
+
+as user_text user lc4_stdio user_text	# Links 3 .ASM files into 1 .OBJ
+ld user_text				# loads the linked .OBJ
+
+as os os	# don't forget the OS!
+ld os
+
+break set END

@@ -1,0 +1,10 @@
+clear
+reset
+
+as user_graphics user lc4_stdio user_graphics	# Links 3 .ASM files into 1 .OBJ
+ld user_graphics				# loads the linked .OBJ
+
+as os os	# don't forget the OS!
+ld os
+
+break set END
